@@ -1,6 +1,4 @@
 
-package hackerrank;
-
 public class Contact {
     
     String name;

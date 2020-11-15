@@ -1,6 +1,14 @@
 import java.util.ArrayList;
 import java.io.File;
 import java.util.HashMap;
+
+
+public class ContactList{
+    public HashMap<String,String> ContactList = new HashMap<String,String>();
+    
+    void addContact(){
+        //Dilumi
+
 import java.util.Scanner;
 
 
@@ -70,6 +78,7 @@ public class ContactList{
         System.out.println("Please add phone number: ");
         String phone = sc.nextLine();
 	      ContactList.put(name,phone);
+
     }
     
     void removeContact(){
@@ -78,6 +87,15 @@ public class ContactList{
     
     void editContact(){
         //Lasith
+
+        ContactList.get("Strin name");
+    }
+    void displayContacts(){
+        
+            for (String i : ContactList.keySet()) {
+      System.out.println(i + "   " + ContactList.get(i));
+    }
+
 
         ContactList.get("Strin name");
     }
@@ -101,6 +119,7 @@ public class ContactList{
         //
 
         //PK
+
     }
     void  loadContacts(){
         //loads from a file
