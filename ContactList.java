@@ -3,11 +3,17 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Scanner;
 
+
 public class ContactList{
     public HashMap<String,String> ContactList = new HashMap<String,String>();
     
     void addContact(){
         //Dilumi
+        System.out.print("PLease enter name: ");
+        String name = sc.nextLine();
+        System.out.println("Please add phone number: ");
+        String phone = sc.nextLine();
+	      ContactList.put(name,phone);
     }
     
     void removeContact(){
@@ -16,6 +22,7 @@ public class ContactList{
     
     void editContact(){
         //Lasith
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Please enter name of the contact that you want to change:");
         String name = sc.nextLine();
@@ -25,6 +32,13 @@ public class ContactList{
     }
     void displayContacts(){
         //
+        ContactList.get("Strin name");
+    }
+    void displayContacts(){
+
+        //
+
+        //PK
     }
     void  loadContacts(){
         //loads from a file
