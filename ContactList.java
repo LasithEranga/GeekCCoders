@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class ContactList{
     public HashMap<String,String> ContactList = new HashMap<String,String>();
-    Scanner input = new Scanner(System.in);
+
+    Scanner sc = new Scanner(System.in);
     
     void addContact(){
         //Dilumi
@@ -27,7 +28,7 @@ public class ContactList{
                 System.out.println("-------------------------------" );
                 System.out.println("\nDo you want remove contact ?\n 1.Yes\t 2.No" + ContactList.key );
                 
-                ask = input.nextLine();
+                ask = sc.nextLine();
                 
                 if(ask == "1"){
                     ContactList.key.clear();
@@ -44,7 +45,7 @@ public class ContactList{
                     System.out.println("-------------------------------" );
                     System.out.println("\nDo you want remove contact ?\n 1.Yes\t 2.No" + ContactList.key );
                 
-                    ask = input.nextLine();
+                    ask = sc.nextLine();
                 }
                 else{
                     System.out.println("Invalid input please try" );
@@ -61,19 +62,45 @@ public class ContactList{
             
         }
         
-        
-        
-        
-        
-        
+    
+    void addContact(){
+        //Dilumi
+        System.out.print("PLease enter name: ");
+        String name = sc.nextLine();
+        System.out.println("Please add phone number: ");
+        String phone = sc.nextLine();
+	      ContactList.put(name,phone);
+    }
+    
+    void removeContact(){
+        //Supun
     }
     
     void editContact(){
         //Lasith
+
         ContactList.get("Strin name");
     }
     void displayContacts(){
         //
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please enter name of the contact that you want to change:");
+        String name = sc.nextLine();
+        System.out.print("Please enter new  phone number of the contact that you want to change:");
+        String number = sc.nextLine();
+        ContactList.replace(name, number);
+    }
+    void displayContacts(){
+        //
+        ContactList.get("Strin name");
+    }
+    void displayContacts(){
+
+        //
+
+        //PK
     }
     void  loadContacts(){
         //loads from a file
