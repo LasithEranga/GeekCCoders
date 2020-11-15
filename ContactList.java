@@ -10,9 +10,7 @@ public class ContactList{
         String name = sc.nextLine();
         System.out.println("Please add phone number: ");
         String phone = sc.nextLine();
-	ContactList.put(name,phone);
-        
-    
+	      ContactList.put(name,phone);
     }
     
     void removeContact(){
@@ -24,7 +22,11 @@ public class ContactList{
         ContactList.get("Strin name");
     }
     void displayContacts(){
+
         //
+
+        //PK
+
     }
     void  loadContacts(){
         //loads from a file
