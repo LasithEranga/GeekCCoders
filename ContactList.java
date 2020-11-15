@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.io.File;
 
 public class ContactList{
-    public ArrayList<String> ContactList = new ArrayList<String>();
+    public HashMap<String,String> ContactList = new HashMap<String,String>();
     
     void addContact(){
         //Dilumi
@@ -14,6 +14,7 @@ public class ContactList{
     
     void editContact(){
         //Lasith
+        ContactList.get("Strin name");
     }
     void displayContacts(){
         //
